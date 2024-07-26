@@ -1,0 +1,19 @@
+{
+  "name": "vladislavs-summer-school",
+  "version": "1.0.0",
+  "description": "TDL Summer School 2024 Module 2 Cypress project",
+  "main": "comments.js",
+  "scripts": {
+    "format": "npx prettier . --write"
+  },
+  "keywords": [
+    "cypress",
+    "javascript"
+  ],
+  "author": "Vladislavs Germanovics",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.13.1",
+    "prettier": "^3.3.3"
+  }
+}
