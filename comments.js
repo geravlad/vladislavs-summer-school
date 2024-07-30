@@ -1,5 +1,0 @@
-/* multi line comment
-asd
-asd
-afs
-*/
