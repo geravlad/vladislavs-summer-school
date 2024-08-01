@@ -5,7 +5,7 @@ class Login {
     signInButton: () => cy.getByTestId("sign-in-button"),
     titleLink: () => cy.get("h1"),
     loginErrorMessage: () => cy.getByTestId("login-error-message"),
-    joinUsButton: () => cy.getByTestId("register-button")
+    joinUsButton: () => cy.getByTestId("register-button"),
   };
 
   fillEmail(email) {

@@ -1,5 +1,3 @@
-# Vladislavs
-
 # Summer school 2024 Project - Cypress JavaScript
 
 This project is designed to automate the testing of a webstore using JavaScript and the Cypress framework. The tests cover various functionalities of the webstore, ensuring that all features work as expected.
@@ -25,6 +23,7 @@ Before you begin, ensure you have met the following requirements:
 ## Setup
 
 1. **Download and install Node.js**:
+
    - Go to the [Node.js official website](https://nodejs.org/).
    - Download the LTS version (recommended for most users).
    - Follow the installation instructions.
@@ -42,8 +41,9 @@ Before you begin, ensure you have met the following requirements:
 1. **Navigate to your project directory**:
    ```bash
    cd /path/to/your/project
+   ```
 2. **Navigate to your project directory**:
-    - Ensure you have package.json set up in your project. If not, initialize it using:
+   - Ensure you have package.json set up in your project. If not, initialize it using:
    ```bash
    npm init -y
    ```
@@ -51,28 +51,22 @@ Before you begin, ensure you have met the following requirements:
    ```bash
    npm install cypress --save-dev
    ```
+
 ## How to run tests
+
 - Run using Cypress test runner
-    ```bash
-    npx cypress open
-    ```
+  ```bash
+  npx cypress open
+  ```
 - Run a Single Test
-    ```bash
-    npx cypress run --spec "path-to-test.js"
-    ```
+  ```bash
+  npx cypress run --spec "path-to-test.js"
+  ```
 - Run all tests
-    ```bash
-    npx cypress run
-    ```
+  ```bash
+  npx cypress run
+  ```
 - Run tests in different browsers
-    ```bash
-    npx cypress run --browser {chrome; safari; firefox}
-    ```
-
-
-
-
-
-
-
-
+  ```bash
+  npx cypress run --browser {chrome; safari; firefox}
+  ```

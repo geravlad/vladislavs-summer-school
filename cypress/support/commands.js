@@ -7,7 +7,7 @@ Cypress.Commands.add("getByTestId", (id) => {
 });
 
 Cypress.Commands.add("getByHref", (href) => {
-  cy.get(`[href=${href}]`);
+  cy.get(`[href="${href}"]`);
 });
 
 Cypress.Commands.add("login", (username, password) => {
