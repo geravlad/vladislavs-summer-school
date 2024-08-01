@@ -6,7 +6,7 @@
   "scripts": {
     "format": "npx prettier . --write",
     "cypress-open": "npx cypress open",
-    "cypress-run": "npx cupress run",
+    "cypress-run": "npx cypress run",
     "reports-cleanup": "rm -r ./mochawesome-report"
   },
   "keywords": [
