@@ -29,7 +29,14 @@ describe('End-to-end user flow', () => {
 
     it('fills out shipping form', () => {
         cy.visit('/checkout?step=address');
-        cy.form('Tester', 'Teamone', 'Test Adress', '1234', 'TestCity');
+        // cy.form('Tester', 'Teamone', 'Test Adress', '1234', 'TestCity');
+        Checkout.elements.firstNameField().clear().type('Tester');
+        Checkout.elements.lastNameField().clear().type('Teamone');
+        Checkout.elements.addressField().clear().type('Tester');
+        Checkout.elements.postalCodeField().clear().type('1234');
+        Checkout.elements.cityField().clear().type('TestCity');
+        Checkout.elements.countrySelectButton().select('Latvia');
+        Checkout.elements.toDeliveryButton().click();
         cy.contains('h2', 'Delivery');
     });
 

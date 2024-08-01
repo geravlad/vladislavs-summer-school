@@ -5,7 +5,7 @@ class Checkout {
         addressField: () => cy.getByTestId('shipping-address-input'),
         postalCodeField: () => cy.getByTestId('shipping-postal-code-input'),
         cityField: () => cy.getByTestId('shipping-city-input'),
-        countrySelectButton: () => cy.getByTestId('shipping-country-select'),
+        countrySelectButton: () => cy.get('select'),
         toDeliveryButton: () => cy.getByTestId('submit-address-button'),
         deliveryTypeButton: (option) => cy.getByTestId('delivery-option-radio').contains(option),
         toPaymentButton: () => cy.getByTestId('submit-delivery-option-button'),

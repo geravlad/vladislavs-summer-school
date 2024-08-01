@@ -1,6 +1,6 @@
-import Global from "../../pageElements/Global";
-import Login from "../../pageElements/Login";
-import Home from "../../pageElements/Home";
+import Global from "../../../pageElements/Global";
+import Login from "../../../pageElements/Login";
+import Home from "../../../pageElements/Home";
 
 describe("login functionality", () => {
   const USERNAME = Cypress.env("username");
@@ -14,8 +14,9 @@ describe("login functionality", () => {
 
   it("logs in to the webstore", () => {
     cy.login(USERNAME, PASSWORD);
+    cy.visit("/");
     Home.elements.headerLink().contains("Store of Excellence");
-    Home.elements.productLink().should("have.length", 2);
+    Home.elements.productLink().should("have.length", 4);
     Global.navigateSideBar.openPage("Store");
   });
 });
