@@ -7,7 +7,7 @@ module.exports = defineConfig({
   },
   env: {
     username: "team1@test.com",
-    password: "team1pass",
+    password: "",
     invalidUsername: "mark.john@gmail.com",
     invalidPassword: "abc135234"
   },
