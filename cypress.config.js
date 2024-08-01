@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  reporter: 'mochawesome',
+  reporter: "mochawesome",
   reporterOptions: {
     overwrite: false,
   },
@@ -9,9 +9,10 @@ module.exports = defineConfig({
     username: "team1@test.com",
     password: "",
     invalidUsername: "mark.john@gmail.com",
-    invalidPassword: "abc135234"
+    invalidPassword: "abc135234",
   },
   e2e: {
+    scrollBehavior: "center",
     viewportWidth: 1920,
     viewportWidth: 1080,
     trashAssetsBeforeRuns: true,
